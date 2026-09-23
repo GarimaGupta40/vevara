@@ -310,11 +310,11 @@ export function CorrugatedProductPage() {
               >
                 <div>
                   {/* Top Image Section */}
-                  <div className="relative h-44 w-full overflow-hidden bg-slate-50/70 p-3 flex items-center justify-center">
+                  <div className="relative h-44 w-full overflow-hidden bg-white p-1.5 flex items-center justify-center">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="h-full w-full object-contain drop-shadow-sm transition-transform duration-500 group-hover:scale-105"
+                      className="h-full w-full object-contain rounded-xl drop-shadow-sm transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
 

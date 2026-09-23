@@ -252,13 +252,13 @@ export function WoodPlywoodProductPage() {
             {woodProducts.map((item) => (
               <div
                 key={item.title}
-                className="group flex flex-col cursor-pointer rounded-2xl border border-slate-200/80 bg-white p-4 transition-all duration-300 hover:border-brand/40 hover:shadow-lg"
+                className="group flex flex-col cursor-pointer rounded-2xl border border-slate-200/80 bg-white p-3.5 transition-all duration-300 hover:border-brand/40 hover:shadow-lg"
               >
-                <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-xl bg-[#f8f9fa] border border-slate-100 p-2 flex items-center justify-center">
+                <div className="relative h-44 sm:h-48 w-full overflow-hidden rounded-xl bg-white border border-slate-100 p-1 flex items-center justify-center">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-contain rounded-lg transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>

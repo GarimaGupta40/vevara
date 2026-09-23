@@ -81,14 +81,14 @@ export function LabelsProductPage() {
   ];
 
   const machines = [
-    { title: "Gravure Printing Machine", image: gravurePrintingImg },
-    { title: "Punching Machine", image: punchingMachineImg },
-    { title: "Multitec Ecoflex", image: multitecEcoflexImg },
-    { title: "Gallus EM 280", image: gallusEm280Img },
-    { title: "Automatic Slitting Machine", image: autoSlittingImg },
-    { title: "Two Semi-Automatic Slitting Machines", image: semiAutoSlittingImg },
-    { title: "Cutting Machine", image: cuttingMachineImg },
-    { title: "Gluing Machine", image: gluingMachineImg },
+    { title: "Gravure Printing Machine", image: gravurePrintingImg, fit: "cover" },
+    { title: "Punching Machine", image: punchingMachineImg, fit: "cover" },
+    { title: "Multitec Ecoflex", image: multitecEcoflexImg, fit: "cover" },
+    { title: "Gallus EM 280", image: gallusEm280Img, fit: "cover" },
+    { title: "Automatic Slitting Machine", image: autoSlittingImg, fit: "contain" },
+    { title: "Two Semi-Automatic Slitting Machines", image: semiAutoSlittingImg, fit: "contain" },
+    { title: "Cutting Machine", image: cuttingMachineImg, fit: "contain" },
+    { title: "Gluing Machine", image: gluingMachineImg, fit: "contain" },
   ];
 
   const whyChoosePillars = [
@@ -286,11 +286,11 @@ export function LabelsProductPage() {
                 className="group flex flex-col cursor-pointer"
               >
                 {/* Clean Image Container */}
-                <div className="relative h-48 sm:h-52 w-full overflow-hidden rounded-2xl bg-[#f8f9fa] border border-slate-200/60 p-4 flex items-center justify-center transition-all duration-300 group-hover:border-brand/40 group-hover:shadow-md">
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden rounded-2xl bg-white border border-slate-200/80 p-1.5 flex items-center justify-center transition-all duration-300 group-hover:border-brand/40 group-hover:shadow-md">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-contain rounded-xl transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
@@ -336,15 +336,15 @@ export function LabelsProductPage() {
                 key={machine.title}
                 className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-brand/40"
               >
-                <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-slate-50 p-3 flex items-center justify-center">
+                <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-white flex items-center justify-center">
                   <img
                     src={machine.image}
                     alt={machine.title}
-                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className={`h-full w-full ${machine.fit === "cover" ? "object-cover" : "object-contain p-2"} transition-transform duration-500 group-hover:scale-105`}
                     loading="lazy"
                   />
                 </div>
-                <div className="p-4 text-center bg-white border-t border-slate-100">
+                <div className="p-3.5 text-center bg-white border-t border-slate-100">
                   <h4 className="text-xs sm:text-[13px] font-black text-brand-blue-dark group-hover:text-brand transition-colors">
                     {machine.title}
                   </h4>

@@ -237,11 +237,11 @@ export function CustomizedProductPage() {
                 key={item.title}
                 className="group flex flex-col cursor-pointer"
               >
-                <div className="relative h-48 sm:h-52 w-full overflow-hidden rounded-2xl bg-[#f8f9fa] border border-slate-200/60 p-4 flex items-center justify-center transition-all duration-300 group-hover:border-brand/40 group-hover:shadow-md">
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden rounded-2xl bg-white border border-slate-200/80 p-1.5 flex items-center justify-center transition-all duration-300 group-hover:border-brand/40 group-hover:shadow-md">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-contain rounded-xl transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
