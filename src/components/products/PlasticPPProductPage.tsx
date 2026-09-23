@@ -273,14 +273,7 @@ export function PlasticPPProductPage() {
                         className="w-52 sm:w-56 h-24 object-contain drop-shadow-md transition-transform duration-300 hover:scale-105"
                       />
                       {/* Cursive Annotations */}
-                      <div className="absolute -top-3 right-0 text-right select-none pointer-events-none">
-                        <span className="text-base sm:text-lg font-serif italic font-bold text-sky-800 block leading-tight">
-                          Folds Flat
-                        </span>
-                        <span className="text-[11px] font-serif italic font-bold text-sky-600 block">
-                          Saves Space
-                        </span>
-                      </div>
+                      
                     </div>
                   </div>
 

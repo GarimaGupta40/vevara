@@ -170,10 +170,10 @@ function SiteHeader() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all ${
+      className={`sticky top-0 z-50 bg-white transition-all duration-200 ${
         scrolled
-          ? "border-b border-border bg-background/95 shadow-[0_10px_30px_-22px_rgba(15,23,42,0.7)] backdrop-blur"
-          : "border-b border-transparent bg-transparent"
+          ? "border-b border-slate-200/80 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.08)]"
+          : "border-b border-slate-100 shadow-[0_2px_10px_rgba(15,23,42,0.05)]"
       }`}
       onMouseLeave={() => setOpenGroup(null)}
     >
@@ -254,7 +254,7 @@ function SiteHeader() {
       </div>
 
       {open ? (
-        <nav className="max-h-[70vh] overflow-y-auto border-t border-border bg-background xl:hidden">
+        <nav className="max-h-[70vh] overflow-y-auto border-t border-slate-200 bg-white shadow-xl lg:hidden">
           <div className="mx-auto flex max-w-[1280px] flex-col px-6 py-3">
             {NAV.map((item) => {
               const hasChildren = !!item.children?.length;
