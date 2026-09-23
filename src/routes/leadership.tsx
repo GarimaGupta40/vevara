@@ -21,7 +21,7 @@ import {
 import bindraHero from "@/assets/leadership/bindra-hero.png";
 import ceoImg from "@/assets/ceo.png";
 import leaderNeha from "@/assets/leadership/leader-neha.png";
-import leaderRohit from "@/assets/leadership/leader-rohit.png";
+import leaderRohit from "@/assets/leadership/leader-rohit.jpg";
 import leaderPooja from "@/assets/leadership/leader-pooja.png";
 import leaderAmit from "@/assets/leadership/leader-amit.png";
 import mountainFlag from "@/assets/ld.png";
@@ -64,6 +64,16 @@ const NAVRATNAS_PEOPLE = [
   },
   {
     num: "02",
+    name: "Kunal Gawhane",
+    role: "Chief Technology Officer (CTO)",
+    quote: "Building a stronger tomorrow through financial discipline.",
+    image: leaderRohit,
+    numBadge: "bg-emerald-100 text-emerald-700",
+    photoBg: "bg-emerald-50",
+    linkedin: "https://linkedin.com",
+  },
+  {
+    num: "03",
     name: "Neha Kulkarni",
     role: "Chief Operating Officer (COO)",
     quote: "Turning strategy into action, every day.",
@@ -72,16 +82,7 @@ const NAVRATNAS_PEOPLE = [
     photoBg: "bg-blue-50",
     linkedin: "https://linkedin.com",
   },
-  {
-    num: "03",
-    name: "Kunal Gawhane",
-    role: "Chief Financial Officer (CFO)",
-    quote: "Building a stronger tomorrow through financial discipline.",
-    image: leaderRohit,
-    numBadge: "bg-emerald-100 text-emerald-700",
-    photoBg: "bg-emerald-50",
-    linkedin: "https://linkedin.com",
-  },
+  
   {
     num: "04",
     name: "Pooja Deshmukh",
@@ -153,7 +154,7 @@ const EXECUTIVE_LEADERS = [
   },
   {
     name: "Kunal Gawhane",
-    role: "Chief Financial Officer (CFO)",
+    role: "Chief Technology Officer (CTO)",
     image: leaderRohit,
     linkedin: "https://linkedin.com",
   },
@@ -174,7 +175,7 @@ function LeadershipPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#f2f6fb] via-[#f8faff] to-[#edf3fa] pt-8 pb-10 sm:pt-12 sm:pb-14 lg:pt-14 lg:pb-16 text-slate-900 border-b border-slate-200/60">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-4 xl:gap-6">
-            
+
             {/* Left Column: Eyebrow, Title, Paragraph, 4 Pill Icons */}
             <div className="lg:col-span-5 z-10">
               <div className="flex items-center gap-2">
@@ -322,7 +323,7 @@ function LeadershipPage() {
 
           {/* 2 Mentors Cards Grid */}
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
-            
+
             {/* CARD 1: Dr. Vivek Bindra */}
             <div className="flex flex-col justify-between rounded-2xl sm:rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-7 shadow-sm transition-all duration-300 hover:shadow-md">
               <div>
@@ -480,7 +481,7 @@ function LeadershipPage() {
          ========================================================================= */}
       <section className="bg-white py-16 sm:py-20 border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          
+
           {/* Header Row */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-10">
             <div>
@@ -501,7 +502,7 @@ function LeadershipPage() {
 
           {/* CEO Card + 3 Executive Cards Row */}
           <div className="grid gap-5 grid-cols-1 lg:grid-cols-12 items-stretch">
-            
+
             {/* CEO Card (Left ~42% / 5 cols) */}
             <div className="lg:col-span-5 flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm transition-all duration-300 hover:shadow-md">
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 items-start">
@@ -595,10 +596,10 @@ function LeadershipPage() {
          ========================================================================= */}
       <section className="bg-white py-16 sm:py-20 border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          
+
           {/* Header Row: Left Stacked Brand, Center Title & Highlights, Right Cursive Script */}
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-6 pb-6">
-            
+
             {/* Left Stacked Brand Label */}
             <div className="hidden lg:flex lg:col-span-2 flex-col items-start justify-center border-l-2 border-slate-300 pl-4 py-1 select-none">
               <span className="text-[11px] font-black uppercase tracking-[0.25em] text-slate-500 leading-tight">
@@ -766,7 +767,7 @@ function LeadershipPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-lg shadow-slate-100">
             <div className="grid lg:grid-cols-12 items-center bg-white">
-              
+
               {/* Left Photo: Mountain Summit Image */}
               <div className="lg:col-span-5 h-60 sm:h-64 lg:h-full min-h-[260px] lg:min-h-[280px] relative overflow-hidden bg-white">
                 <img
