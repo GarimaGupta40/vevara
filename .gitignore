@@ -36,3 +36,8 @@ dist-ssr
 
 # Vercel
 .vercel/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
